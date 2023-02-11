@@ -1,0 +1,7 @@
+.table {
+    @apply bg-blue-300 border-4 border-black
+}
+
+.table tr, .table td{
+    @apply border border-black;
+}
