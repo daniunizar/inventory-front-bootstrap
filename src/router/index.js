@@ -4,6 +4,7 @@ import LoginView from '../components/views/no-auth/LoginView.vue'
 import RegisterView from '../components/views/no-auth/RegisterView.vue';
 import BookItems from '../components/views/book/bookItems.vue';
 import BoardgameItems from '../components/views/boardgame/BoardgameItems.vue';
+import BoardgameStore from '../components/views/boardgame/BoardgameStore.vue';
 import RecipeItems from '../components/views/recipe/RecipeItems.vue';
 import { useSessionStore } from "@/stores/session-store";
 
@@ -34,6 +35,11 @@ const router = createRouter({
       path: '/boardgame.items',
       name: 'boardgame.items',
       component: BoardgameItems
+    },
+    {
+      path: '/boardgame.item.store',
+      name: 'boardgame.item.store',
+      component: BoardgameStore,
     },
     {
       path: '/recipe.items',

@@ -4,7 +4,7 @@
     <main class="container mt-5">
       <h1 class="text-center mb-5">Mi Ludoteca</h1>
        <div class="d-flex justify-content-between">
-        <router-link to="/agregar-juego" class="btn btn-primary">Registrar nuevo juego en mi colección</router-link>
+        <router-link :to="{name: 'boardgame.item.store'}" class="btn btn-primary">Registrar nuevo juego en mi colección</router-link>
         <router-link to="/" class="btn btn-secondary">Volver</router-link>
       </div>
       <table class="table table-bordered table-striped mt-5">
