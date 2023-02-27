@@ -5,6 +5,7 @@ import RegisterView from '../components/views/no-auth/RegisterView.vue';
 import BookItems from '../components/views/book/bookItems.vue';
 import BoardgameItems from '../components/views/boardgame/BoardgameItems.vue';
 import BoardgameStore from '../components/views/boardgame/BoardgameStore.vue';
+import BoardgameCreate from '../components/views/boardgame/BoardgameCreate.vue';
 import RecipeItems from '../components/views/recipe/RecipeItems.vue';
 import { useSessionStore } from "@/stores/session-store";
 
@@ -45,6 +46,11 @@ const router = createRouter({
       path: '/recipe.items',
       name: 'recipe.items',
       component: RecipeItems
+    },
+    {
+      path: '/boardgame.item.create', //el endpoint del back, descrito en routes/api.php
+      name: 'boardgame.item.create', //el nombre de la ruta, no sé si en el back o aquí en el frontal
+      component: BoardgameCreate // asignamos a esta ruta un componente que hemos importado arriba
     },
     {
       path: '/about',

@@ -1,5 +1,5 @@
 <template>
-  <footer class="bg-light py-3 fixed-bottom">
+  <footer class="bg-light py-3">
     <div class="container">
       <p class="text-center">Un proyecto de Stukita</p>
       <nav class="nav justify-content-center">

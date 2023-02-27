@@ -10,6 +10,15 @@ const BoardgameService = {
         console.error(error);
         throw error;
       });
+  },
+  storeBoardgame(payload){
+    return axios
+      .post(url+'/api/boardgame/item/create', payload)
+      .then(response => response.data)
+      .catch(error => {
+        console.error(error);
+        throw error;
+      });
   }
 };
 
